@@ -8,4 +8,5 @@ a=int(input("Input the length of a side:"))
 r=((a/2)/tan(pi/n))
 
 
-print(((a*n)/2)*r)
+print(round(((a*n)/2)*r))
+

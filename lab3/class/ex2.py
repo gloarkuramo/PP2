@@ -1,16 +1,11 @@
-class shape:
-    def area(self):
-        return 0;
-      
-class Square(shape):
-        def __init__(self, lenght):
-            self.lenght=lenght;
-        def area(self):
-            return self.lenght**2;
-a=float(input("a="))
+from math import pi
+from math import tan
 
-ex=shape()
-print(ex.area())
-es=Square(a)
-print(es.area())
+p=pi
+n=int(input("Input number of sides:"))
+a=int(input("Input the length of a side:"))
 
+r=((a/2)/tan(pi/n))
+
+
+print(round(((a*n)/2)*r))
